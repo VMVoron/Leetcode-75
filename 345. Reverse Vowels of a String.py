@@ -10,7 +10,9 @@ class Solution:
                 left += 1
             while left < right and st[right].lower() not in vowels:
                 right -= 1
+
             
+            # move down only in we found vowels
 
             st[left], st[right] = st[right], st[left]
             left += 1
