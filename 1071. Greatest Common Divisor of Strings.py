@@ -16,6 +16,11 @@ class Solution(object):
       
         def gcd(a, b):
             return a if b == 0 else gcd(b, a % b)
+            # for example
+            # a = 8, b = 16
+            # start
+            # 16 8 ,8  2, 2, 2, b =0 -> a = 2 = gcd
+            # the last digit becomes the first when mixing
 
         # Check if str1 + str2 forms a palindrome
         # ensures that the pattern of characters in both strings is compatible for them to have a common divisor string
